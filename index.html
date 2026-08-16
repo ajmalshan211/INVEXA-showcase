@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <meta
         name="description"
-        content="INVEXA is a focused GST invoice management application for freelancers and small service businesses, built with Django by Ajmal Shan."
+        content="INVEXA is a Django-based GST invoice management application for freelancers and small service businesses, built by Ajmal Shan."
     >
     <meta name="author" content="Ajmal Shan">
     <meta name="theme-color" content="#17184f">
@@ -14,7 +15,7 @@
     <meta property="og:title" content="INVEXA — GST Invoice Management">
     <meta
         property="og:description"
-        content="Clear, professional GST invoice management for Indian service businesses."
+        content="A functional Django GST invoice management MVP with PDF export and tested tax logic."
     >
 
     <title>INVEXA — GST Invoice Management</title>
@@ -49,7 +50,11 @@
                 <span></span>
             </button>
 
-            <nav class="site-navigation" id="site-navigation" aria-label="Primary navigation">
+            <nav
+                class="site-navigation"
+                id="site-navigation"
+                aria-label="Primary navigation"
+            >
                 <a href="#overview">Overview</a>
                 <a href="#features">Features</a>
                 <a href="#gst-logic">GST Logic</a>
@@ -78,7 +83,7 @@
                 <div class="hero-copy" data-reveal>
                     <div class="eyebrow">
                         <span class="status-dot" aria-hidden="true"></span>
-                        Portfolio product · Active development
+                        Portfolio MVP · Core workflow complete
                     </div>
 
                     <h1>
@@ -87,9 +92,9 @@
                     </h1>
 
                     <p class="hero-description">
-                        INVEXA is a focused invoice management application designed
-                        to help freelancers and small service businesses create,
-                        organize, and understand GST invoices with confidence.
+                        INVEXA is a focused Django invoice management application
+                        designed to help freelancers and small service businesses
+                        create, organize, and export GST invoices with confidence.
                     </p>
 
                     <div class="hero-actions">
@@ -119,25 +124,40 @@
                             <span>Tax logic</span>
                         </li>
                         <li>
-                            <strong>Responsive</strong>
-                            <span>Interface</span>
+                            <strong>PDF-ready</strong>
+                            <span>Invoice output</span>
                         </li>
                     </ul>
                 </div>
 
-                <div class="hero-visual" data-reveal data-reveal-delay="1">
-                    <div class="visual-orbit orbit-one" aria-hidden="true"></div>
-                    <div class="visual-orbit orbit-two" aria-hidden="true"></div>
+                <div
+                    class="hero-visual"
+                    data-reveal
+                    data-reveal-delay="1"
+                >
+                    <div
+                        class="visual-orbit orbit-one"
+                        aria-hidden="true"
+                    ></div>
+                    <div
+                        class="visual-orbit orbit-two"
+                        aria-hidden="true"
+                    ></div>
 
                     <div class="app-window">
                         <div class="window-topbar">
-                            <div class="window-dots" aria-hidden="true">
+                            <div
+                                class="window-dots"
+                                aria-hidden="true"
+                            >
                                 <span></span>
                                 <span></span>
                                 <span></span>
                             </div>
 
-                            <div class="window-address">invexa / dashboard</div>
+                            <div class="window-address">
+                                invexa / dashboard
+                            </div>
 
                             <div class="window-secure">
                                 <span aria-hidden="true">●</span>
@@ -146,20 +166,41 @@
                         </div>
 
                         <div class="product-shell">
-                            <aside class="product-sidebar" aria-label="INVEXA preview navigation">
+                            <aside
+                                class="product-sidebar"
+                                aria-label="INVEXA preview navigation"
+                            >
                                 <div class="preview-brand">
                                     <span>I</span>
                                     <strong>INVEXA</strong>
                                 </div>
 
-                                <div class="preview-nav" aria-hidden="true">
-                                    <span class="active"><i>⌂</i> Dashboard</span>
-                                    <span><i>▤</i> Invoices</span>
-                                    <span><i>♙</i> Clients</span>
-                                    <span><i>⚙</i> Business</span>
+                                <div
+                                    class="preview-nav"
+                                    aria-hidden="true"
+                                >
+                                    <span class="active">
+                                        <i>⌂</i>
+                                        Dashboard
+                                    </span>
+                                    <span>
+                                        <i>▤</i>
+                                        Invoices
+                                    </span>
+                                    <span>
+                                        <i>♙</i>
+                                        Clients
+                                    </span>
+                                    <span>
+                                        <i>⚙</i>
+                                        Business
+                                    </span>
                                 </div>
 
-                                <div class="preview-profile" aria-hidden="true">
+                                <div
+                                    class="preview-profile"
+                                    aria-hidden="true"
+                                >
                                     <b>AS</b>
                                     <span>
                                         Ajmal Shan
@@ -174,24 +215,33 @@
                                         <small>OVERVIEW</small>
                                         <h2>Financial dashboard</h2>
                                     </div>
-                                    <span class="preview-button">+ New Invoice</span>
+
+                                    <span class="preview-button">
+                                        + New Invoice
+                                    </span>
                                 </div>
 
                                 <div class="stat-grid">
                                     <div class="preview-stat">
                                         <span>Total invoiced</span>
                                         <strong>₹1,24,800</strong>
-                                        <small class="positive">↑ 12.4% this month</small>
+                                        <small class="positive">
+                                            ↑ 12.4% this month
+                                        </small>
                                     </div>
+
                                     <div class="preview-stat">
                                         <span>Amount received</span>
                                         <strong>₹86,400</strong>
                                         <small>8 paid invoices</small>
                                     </div>
+
                                     <div class="preview-stat">
                                         <span>Outstanding</span>
                                         <strong>₹38,400</strong>
-                                        <small class="warning">3 invoices due</small>
+                                        <small class="warning">
+                                            3 invoices due
+                                        </small>
                                     </div>
                                 </div>
 
@@ -202,13 +252,18 @@
                                             <small>Last 6 months</small>
                                         </div>
 
-                                        <div class="bar-chart" aria-hidden="true">
+                                        <div
+                                            class="bar-chart"
+                                            aria-hidden="true"
+                                        >
                                             <span class="bar-one"></span>
                                             <span class="bar-two"></span>
                                             <span class="bar-three"></span>
                                             <span class="bar-four"></span>
                                             <span class="bar-five"></span>
-                                            <span class="bar-six current"></span>
+                                            <span
+                                                class="bar-six current"
+                                            ></span>
                                         </div>
                                     </div>
 
@@ -226,8 +281,14 @@
                                         </div>
 
                                         <div class="tax-legend">
-                                            <span><i class="legend-cgst"></i> CGST</span>
-                                            <span><i class="legend-sgst"></i> SGST</span>
+                                            <span>
+                                                <i class="legend-cgst"></i>
+                                                CGST
+                                            </span>
+                                            <span>
+                                                <i class="legend-sgst"></i>
+                                                SGST
+                                            </span>
                                         </div>
                                     </div>
                                 </div>
@@ -235,7 +296,10 @@
                         </div>
                     </div>
 
-                    <div class="floating-card floating-card-one" aria-hidden="true">
+                    <div
+                        class="floating-card floating-card-one"
+                        aria-hidden="true"
+                    >
                         <span class="floating-icon">✓</span>
                         <div>
                             <small>Invoice status</small>
@@ -243,7 +307,10 @@
                         </div>
                     </div>
 
-                    <div class="floating-card floating-card-two" aria-hidden="true">
+                    <div
+                        class="floating-card floating-card-two"
+                        aria-hidden="true"
+                    >
                         <small>GST calculated</small>
                         <strong>CGST + SGST</strong>
                     </div>
@@ -253,7 +320,8 @@
             <div class="container hero-footnote" data-reveal>
                 <span>01</span>
                 <p>
-                    Built as a real-world full-stack project—not a static UI concept.
+                    Built as a real-world full-stack project—not a static UI
+                    concept.
                 </p>
                 <div aria-hidden="true"></div>
             </div>
@@ -268,24 +336,33 @@
                     </div>
 
                     <p>
-                        INVEXA brings business details, clients, invoices, tax logic,
-                        and payment status into a single focused workflow. Its goal is
-                        to make routine invoicing feel simple without hiding the
-                        information a GST invoice requires.
+                        INVEXA brings business details, clients, invoices, tax
+                        logic, downloadable PDF output, and payment status into
+                        a single focused workflow. Its goal is to make routine
+                        invoicing feel simple without hiding the information a
+                        GST invoice requires.
                     </p>
                 </div>
 
                 <div class="overview-grid">
-                    <article class="overview-card overview-card-large" data-reveal>
+                    <article
+                        class="overview-card overview-card-large"
+                        data-reveal
+                    >
                         <div class="card-index">01</div>
                         <div class="card-icon" aria-hidden="true">▤</div>
-                        <h3>Purpose-built for Indian service businesses</h3>
+
+                        <h3>
+                            Purpose-built for Indian service businesses
+                        </h3>
+
                         <p>
-                            A streamlined experience for freelancers, consultants,
-                            studios, agencies, and other small teams that need
-                            professional GST invoices without a heavyweight
-                            accounting suite.
+                            A streamlined experience for freelancers,
+                            consultants, studios, agencies, and other small
+                            teams that need professional GST invoices without a
+                            heavyweight accounting suite.
                         </p>
+
                         <ul class="inline-tags">
                             <li>Freelancers</li>
                             <li>Agencies</li>
@@ -294,24 +371,38 @@
                         </ul>
                     </article>
 
-                    <article class="overview-card" data-reveal data-reveal-delay="1">
+                    <article
+                        class="overview-card"
+                        data-reveal
+                        data-reveal-delay="1"
+                    >
                         <div class="card-index">02</div>
                         <div class="card-icon" aria-hidden="true">◎</div>
+
                         <h3>Clarity first</h3>
+
                         <p>
-                            Clean language, visible totals, and a guided interface
-                            keep the user focused on the work instead of accounting
-                            terminology.
+                            Clean language, visible totals, and a guided
+                            interface keep the user focused on the work instead
+                            of accounting terminology.
                         </p>
                     </article>
 
-                    <article class="overview-card accent-card" data-reveal data-reveal-delay="2">
+                    <article
+                        class="overview-card accent-card"
+                        data-reveal
+                        data-reveal-delay="2"
+                    >
                         <div class="card-index">03</div>
                         <div class="card-icon" aria-hidden="true">₹</div>
+
                         <h3>GST-aware by design</h3>
+
                         <p>
-                            The application distinguishes same-state and interstate
-                            transactions to support the correct tax structure.
+                            The application distinguishes same-state and
+                            interstate transactions to support the correct tax
+                            structure in both the application and generated PDF
+                            invoices.
                         </p>
                     </article>
                 </div>
@@ -320,80 +411,129 @@
 
         <section class="features section-pad" id="features">
             <div class="container">
-                <div class="section-heading centered-heading" data-reveal>
+                <div
+                    class="section-heading centered-heading"
+                    data-reveal
+                >
                     <span class="section-number">02 / Capabilities</span>
                     <h2>Designed around the complete invoicing journey.</h2>
+
                     <p>
-                        From storing accurate client details to understanding what is
-                        paid, pending, or overdue, every part of INVEXA supports one
-                        connected workflow.
+                        From storing accurate client details to creating an
+                        invoice and exporting it as a PDF, every part of INVEXA
+                        supports one connected workflow.
                     </p>
                 </div>
 
                 <div class="feature-list">
                     <article class="feature-row" data-reveal>
                         <div class="feature-number">01</div>
+
                         <div class="feature-title">
-                            <span class="feature-icon" aria-hidden="true">⌂</span>
+                            <span
+                                class="feature-icon"
+                                aria-hidden="true"
+                            >
+                                ⌂
+                            </span>
                             <h3>Business overview</h3>
                         </div>
+
                         <p>
                             A dashboard that surfaces total invoices, clients,
-                            collected value, and the records that need attention.
+                            billed value, received value, outstanding value, and
+                            recent records.
                         </p>
+
                         <span class="feature-status complete">Built</span>
                     </article>
 
                     <article class="feature-row" data-reveal>
                         <div class="feature-number">02</div>
+
                         <div class="feature-title">
-                            <span class="feature-icon" aria-hidden="true">♙</span>
+                            <span
+                                class="feature-icon"
+                                aria-hidden="true"
+                            >
+                                ♙
+                            </span>
                             <h3>Client management</h3>
                         </div>
+
                         <p>
-                            Create, search, review, and update client records with
-                            registered business names, GSTINs, states, and addresses.
+                            Create, search, review, and update client records
+                            with registered business names, GSTINs, states, and
+                            addresses.
                         </p>
+
                         <span class="feature-status complete">Built</span>
                     </article>
 
                     <article class="feature-row" data-reveal>
                         <div class="feature-number">03</div>
+
                         <div class="feature-title">
-                            <span class="feature-icon" aria-hidden="true">▤</span>
+                            <span
+                                class="feature-icon"
+                                aria-hidden="true"
+                            >
+                                ▤
+                            </span>
                             <h3>Invoice organization</h3>
                         </div>
+
                         <p>
-                            Search invoices, filter by status, and review totals from
-                            a responsive, purpose-built records workspace.
+                            Search invoices, filter by status, edit saved
+                            records, and review totals from a responsive,
+                            purpose-built workspace.
                         </p>
+
                         <span class="feature-status complete">Built</span>
                     </article>
 
                     <article class="feature-row" data-reveal>
                         <div class="feature-number">04</div>
+
                         <div class="feature-title">
-                            <span class="feature-icon" aria-hidden="true">＋</span>
+                            <span
+                                class="feature-icon"
+                                aria-hidden="true"
+                            >
+                                ＋
+                            </span>
                             <h3>Guided invoice builder</h3>
                         </div>
+
                         <p>
-                            Add line items, calculate taxable value and GST, then
-                            generate a clear invoice ready for review.
+                            Add one or more line items, calculate taxable value
+                            and GST, set invoice status, save edits, and validate
+                            invoice information before it is stored.
                         </p>
-                        <span class="feature-status building">In progress</span>
+
+                        <span class="feature-status complete">Built</span>
                     </article>
 
                     <article class="feature-row" data-reveal>
                         <div class="feature-number">05</div>
+
                         <div class="feature-title">
-                            <span class="feature-icon" aria-hidden="true">↓</span>
+                            <span
+                                class="feature-icon"
+                                aria-hidden="true"
+                            >
+                                ↓
+                            </span>
                             <h3>Professional PDF output</h3>
                         </div>
+
                         <p>
-                            Produce a printable, downloadable GST invoice with clear
-                            business, client, tax, and payment information.
+                            Generate a printable, downloadable GST invoice with
+                            supplier and client details, line items, tax
+                            breakdown, notes, and grand total.
                         </p>
-                        <span class="feature-status planned">Planned</span>
+
+                        <span class="feature-status complete">Built</span>
                     </article>
                 </div>
             </div>
@@ -402,59 +542,112 @@
         <section class="gst-section section-pad" id="gst-logic">
             <div class="container gst-layout">
                 <div class="gst-copy" data-reveal>
-                    <span class="section-number light-number">03 / GST Logic</span>
+                    <span class="section-number light-number">
+                        03 / GST Logic
+                    </span>
+
                     <h2>The right tax structure, explained visibly.</h2>
+
                     <p>
-                        INVEXA compares the business state with the client state and
-                        applies the appropriate GST structure. The calculation is
-                        presented clearly so the user can understand how the invoice
-                        total was formed.
+                        INVEXA compares the business state with the client
+                        state and applies the appropriate GST structure. The
+                        calculation is presented clearly in the app and in the
+                        generated PDF so the user can understand how the total
+                        was formed.
                     </p>
 
                     <div class="gst-note">
                         <span aria-hidden="true">i</span>
                         <p>
-                            INVEXA is an independent software project. Production use
-                            will require final compliance review by a qualified GST
-                            professional.
+                            INVEXA is an independent software project.
+                            Production use will require final compliance review
+                            by a qualified GST professional.
                         </p>
                     </div>
                 </div>
 
                 <div class="gst-cards">
-                    <article class="gst-card" data-reveal data-reveal-delay="1">
+                    <article
+                        class="gst-card"
+                        data-reveal
+                        data-reveal-delay="1"
+                    >
                         <div class="gst-card-top">
-                            <span class="gst-card-icon" aria-hidden="true">⌖</span>
-                            <span class="logic-label">Same-state supply</span>
+                            <span
+                                class="gst-card-icon"
+                                aria-hidden="true"
+                            >
+                                ⌖
+                            </span>
+                            <span class="logic-label">
+                                Same-state supply
+                            </span>
                         </div>
+
                         <h3>CGST <span>+</span> SGST</h3>
+
                         <p>
-                            When the supplier and client are registered in the same
-                            state, the tax is divided between Central GST and State GST.
+                            When the supplier and client are registered in the
+                            same state, the tax is divided between Central GST
+                            and State GST.
                         </p>
+
                         <div class="tax-example">
                             <span>Example on ₹10,000 at 18%</span>
-                            <div><b>CGST</b><strong>₹900</strong></div>
-                            <div><b>SGST</b><strong>₹900</strong></div>
-                            <div class="example-total"><b>Total</b><strong>₹11,800</strong></div>
+                            <div>
+                                <b>CGST</b>
+                                <strong>₹900</strong>
+                            </div>
+                            <div>
+                                <b>SGST</b>
+                                <strong>₹900</strong>
+                            </div>
+                            <div class="example-total">
+                                <b>Total</b>
+                                <strong>₹11,800</strong>
+                            </div>
                         </div>
                     </article>
 
-                    <article class="gst-card gst-card-highlight" data-reveal data-reveal-delay="2">
+                    <article
+                        class="gst-card gst-card-highlight"
+                        data-reveal
+                        data-reveal-delay="2"
+                    >
                         <div class="gst-card-top">
-                            <span class="gst-card-icon" aria-hidden="true">↗</span>
-                            <span class="logic-label">Interstate supply</span>
+                            <span
+                                class="gst-card-icon"
+                                aria-hidden="true"
+                            >
+                                ↗
+                            </span>
+                            <span class="logic-label">
+                                Interstate supply
+                            </span>
                         </div>
+
                         <h3>IGST</h3>
+
                         <p>
-                            When the supplier and client are registered in different
-                            states, Integrated GST is applied as a single tax amount.
+                            When the supplier and client are registered in
+                            different states, Integrated GST is applied as a
+                            single tax amount.
                         </p>
+
                         <div class="tax-example">
                             <span>Example on ₹10,000 at 18%</span>
-                            <div><b>IGST</b><strong>₹1,800</strong></div>
-                            <div class="example-spacer" aria-hidden="true"></div>
-                            <div class="example-total"><b>Total</b><strong>₹11,800</strong></div>
+                            <div>
+                                <b>IGST</b>
+                                <strong>₹1,800</strong>
+                            </div>
+                            <div
+                                class="example-spacer"
+                                aria-hidden="true"
+                            ></div>
+                            <div class="example-total">
+                                <b>Total</b>
+                                <strong>₹11,800</strong>
+                            </div>
                         </div>
                     </article>
                 </div>
@@ -468,10 +661,12 @@
                         <span class="section-number">04 / Engineering</span>
                         <h2>A practical full-stack architecture.</h2>
                     </div>
+
                     <p>
-                        INVEXA uses Django’s structured application pattern to keep
-                        business rules, data, views, validation, and templates clear
-                        enough to extend as the product grows.
+                        INVEXA uses Django’s structured application pattern to
+                        keep business rules, data, views, validation, templates,
+                        and PDF generation clear enough to extend as the product
+                        grows.
                     </p>
                 </div>
 
@@ -481,13 +676,19 @@
                         <strong>HTML · CSS · JavaScript</strong>
                         <span>Responsive application views</span>
                     </div>
+
                     <div class="architecture-arrow" aria-hidden="true">→</div>
+
                     <div class="architecture-node featured-node">
                         <small>Application</small>
-                        <strong>Python · Django</strong>
-                        <span>Views, forms, validation, GST logic</span>
+                        <strong>Python · Django · xhtml2pdf</strong>
+                        <span>
+                            Views, forms, validation, GST logic, PDF generation
+                        </span>
                     </div>
+
                     <div class="architecture-arrow" aria-hidden="true">→</div>
+
                     <div class="architecture-node">
                         <small>Data</small>
                         <strong>SQLite · Django ORM</strong>
@@ -500,32 +701,37 @@
                         <span>01</span>
                         <h3>Data modelling</h3>
                         <p>
-                            Related models represent the business profile, clients,
-                            invoices, and invoice line items.
+                            Related models represent the business profile,
+                            clients, invoices, and invoice line items.
                         </p>
                     </article>
+
                     <article data-reveal data-reveal-delay="1">
                         <span>02</span>
                         <h3>Server-side validation</h3>
                         <p>
-                            Django forms protect data quality and provide focused,
-                            field-level feedback.
+                            Django forms protect data quality and provide
+                            focused, field-level feedback for GSTINs, dates,
+                            line items, and business details.
                         </p>
                     </article>
+
                     <article data-reveal data-reveal-delay="2">
                         <span>03</span>
-                        <h3>Maintainable separation</h3>
+                        <h3>Tested GST logic</h3>
                         <p>
-                            Private application code and the public project showcase
-                            are maintained in separate repositories.
+                            Automated tests and manual PDF checks verify both
+                            same-state CGST plus SGST and inter-state IGST
+                            calculations.
                         </p>
                     </article>
+
                     <article data-reveal data-reveal-delay="3">
                         <span>04</span>
-                        <h3>Product-minded scope</h3>
+                        <h3>Maintainable separation</h3>
                         <p>
-                            Features are developed around a defined audience instead
-                            of expanding into a generic accounting suite.
+                            Private application code and the public project
+                            showcase are maintained in separate repositories.
                         </p>
                     </article>
                 </div>
@@ -537,19 +743,26 @@
                 <div class="progress-copy" data-reveal>
                     <span class="section-number">05 / Build Progress</span>
                     <h2>An honest look at where the project stands.</h2>
+
                     <p>
-                        INVEXA is being developed as a functional portfolio MVP. The
-                        public showcase documents the product and engineering journey;
-                        the full application source remains private.
+                        INVEXA is a functional portfolio MVP. The complete
+                        invoice workflow, custom business-profile management,
+                        GST calculations, PDF export, and automated tests are
+                        complete. Final documentation and Windows packaging are
+                        in progress.
                     </p>
 
                     <div class="progress-meter">
                         <div class="progress-label">
                             <span>Functional MVP</span>
-                            <strong>60%</strong>
+                            <strong>90%</strong>
                         </div>
+
                         <div class="progress-track">
-                            <span class="progress-sixty"></span>
+                            <span
+                                class="progress-sixty"
+                                style="width: 90%;"
+                            ></span>
                         </div>
                     </div>
                 </div>
@@ -557,37 +770,55 @@
                 <div class="roadmap" data-reveal data-reveal-delay="1">
                     <article class="roadmap-item complete-item">
                         <span class="roadmap-marker">✓</span>
+
                         <div>
                             <small>Foundation · Complete</small>
                             <h3>Core data and application structure</h3>
-                            <p>Models, migrations, admin tools, routing, and GST calculation foundation.</p>
+                            <p>
+                                Models, migrations, routing, forms,
+                                validation, and GST calculation foundation.
+                            </p>
                         </div>
                     </article>
 
                     <article class="roadmap-item complete-item">
                         <span class="roadmap-marker">✓</span>
+
                         <div>
                             <small>Management · Complete</small>
-                            <h3>Dashboard, invoices, and clients</h3>
-                            <p>Responsive overview, search, filtering, client creation, and editing.</p>
+                            <h3>Dashboard, invoices, clients, and profile</h3>
+                            <p>
+                                Responsive dashboard, invoice and client
+                                workflows, search, filters, custom business
+                                profile editing, and logo upload.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="roadmap-item complete-item">
+                        <span class="roadmap-marker">✓</span>
+
+                        <div>
+                            <small>Workflow · Complete</small>
+                            <h3>Invoice builder, GST logic, and PDF export</h3>
+                            <p>
+                                Dynamic line items, saved invoice editing,
+                                correct CGST/SGST or IGST totals, and
+                                printable GST invoice PDFs.
+                            </p>
                         </div>
                     </article>
 
                     <article class="roadmap-item active-item">
                         <span class="roadmap-marker">●</span>
+
                         <div>
                             <small>Current phase · In progress</small>
-                            <h3>Complete invoice workflow</h3>
-                            <p>Invoice builder, dynamic line items, totals, preview, status, and editing.</p>
-                        </div>
-                    </article>
-
-                    <article class="roadmap-item">
-                        <span class="roadmap-marker">04</span>
-                        <div>
-                            <small>Next phase · Planned</small>
-                            <h3>PDF output and portfolio release</h3>
-                            <p>Printable invoices, testing, sample data, documentation, and final polish.</p>
+                            <h3>Portfolio release and Windows packaging</h3>
+                            <p>
+                                Final documentation, public case-study polish,
+                                and a double-clickable Windows demo build.
+                            </p>
                         </div>
                     </article>
                 </div>
@@ -604,10 +835,11 @@
                 <div class="case-study-copy">
                     <h2>More than a dashboard mockup.</h2>
                     <p>
-                        This project demonstrates end-to-end application thinking:
-                        defining a user, modelling business data, implementing CRUD
-                        workflows, handling tax rules, validating input, designing a
-                        coherent interface, and planning a safe path from MVP to product.
+                        This project demonstrates end-to-end application
+                        thinking: defining a user, modelling business data,
+                        implementing CRUD workflows, handling tax rules,
+                        validating input, generating PDFs, designing a coherent
+                        interface, and packaging a practical portfolio MVP.
                     </p>
                 </div>
 
@@ -616,10 +848,12 @@
                         <dt>Role</dt>
                         <dd>Solo developer &amp; designer</dd>
                     </div>
+
                     <div>
                         <dt>Focus</dt>
                         <dd>Full-stack web application</dd>
                     </div>
+
                     <div>
                         <dt>Audience</dt>
                         <dd>Small service businesses</dd>
@@ -630,12 +864,18 @@
 
         <section class="final-cta section-pad">
             <div class="final-glow" aria-hidden="true"></div>
+
             <div class="container final-cta-inner" data-reveal>
-                <span class="section-number light-number">Explore the build</span>
+                <span class="section-number light-number">
+                    Explore the build
+                </span>
+
                 <h2>A focused idea, engineered into a real application.</h2>
+
                 <p>
-                    Follow INVEXA’s public showcase as the invoice workflow,
-                    downloadable PDFs, testing, and final case study are completed.
+                    INVEXA’s core invoice workflow, downloadable PDF exports,
+                    GST logic, and automated tests are complete. Final portfolio
+                    documentation and Windows packaging are underway.
                 </p>
 
                 <div class="hero-actions cta-actions">
@@ -648,6 +888,7 @@
                         View on GitHub
                         <span aria-hidden="true">↗</span>
                     </a>
+
                     <a class="button button-ghost" href="#top">
                         Back to top
                         <span aria-hidden="true">↑</span>
@@ -659,7 +900,11 @@
 
     <footer class="site-footer">
         <div class="container footer-inner">
-            <a class="brand footer-brand" href="#top" aria-label="INVEXA home">
+            <a
+                class="brand footer-brand"
+                href="#top"
+                aria-label="INVEXA home"
+            >
                 <span class="brand-mark" aria-hidden="true">I</span>
                 <span class="brand-copy">
                     <strong>INVEXA</strong>
@@ -673,11 +918,14 @@
                     href="https://github.com/ajmalshan211"
                     target="_blank"
                     rel="noreferrer"
-                >Ajmal Shan</a>.
+                >
+                    Ajmal Shan
+                </a>.
             </p>
 
             <p class="copyright">
-                &copy; <span id="current-year">2026</span> INVEXA. Portfolio project.
+                &copy; <span id="current-year">2026</span> INVEXA.
+                Portfolio project.
             </p>
         </div>
     </footer>
