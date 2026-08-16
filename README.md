@@ -48,6 +48,7 @@ Example: a taxable value of ₹10,000 at 18% GST produces ₹1,800 tax and a ₹
 - Inter-state IGST calculation
 - Professional browser-viewable and downloadable GST invoice PDFs
 - Automated GST calculation tests
+- Tested single-file Windows desktop demo for interviewer evaluation
 
 ## Technology
 
@@ -59,6 +60,8 @@ Example: a taxable value of ₹10,000 at 18% GST produces ₹1,800 tax and a ₹
 - JavaScript
 - xhtml2pdf
 - Pillow
+- Waitress
+- PyInstaller
 
 ## Project Structure
 
@@ -69,7 +72,7 @@ INVEXA is maintained in two separate repositories:
 | `INVEXA-showcase` | Public | Portfolio case study and project presentation |
 | `INVEXA-core` | Private | Full Django application source code |
 
-The private core repository is intentionally not published because it contains the complete application implementation and local development configuration.
+The private core repository and Windows executable are intentionally not published. A private desktop demo can be shared with interviewers on request.
 
 ## Validation
 
@@ -79,19 +82,18 @@ The private application has been verified with:
 python manage.py check
 python manage.py test
 
-Current automated result:
-
-4 tests passed
+Current automated result: 4 tests passed.
 
 Manual testing also verified both PDF GST cases:
 
 Kerala client: CGST + SGST invoice PDF
 Tamil Nadu client: IGST-only invoice PDF
+Windows desktop demo: dashboard, clients, invoices, business profile, logo upload, custom forms, PDF export, and admin static assets
 Current Status
 
-INVEXA is a functional portfolio MVP.
+INVEXA is a completed portfolio MVP.
 
-The core invoice workflow, GST calculations, custom business-profile workflow, PDF export, and automated tests are complete. Final documentation and Windows executable packaging are in progress.
+The core invoice workflow, GST calculations, custom business-profile workflow, PDF export, automated tests, and Windows desktop demo are complete. The executable is shared privately on request for interviewer evaluation.
 
 Author
 
