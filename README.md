@@ -81,20 +81,22 @@ The private application has been verified with:
 ```text
 python manage.py check
 python manage.py test
+```
 
-Current automated result: 4 tests passed.
+Current automated result: **4 tests passed**.
 
-Manual testing also verified both PDF GST cases:
+Manual testing also verified:
 
-Kerala client: CGST + SGST invoice PDF
-Tamil Nadu client: IGST-only invoice PDF
-Windows desktop demo: dashboard, clients, invoices, business profile, logo upload, custom forms, PDF export, and admin static assets
-Current Status
+- Kerala client: CGST + SGST invoice PDF
+- Tamil Nadu client: IGST-only invoice PDF
+- Windows desktop demo: dashboard, clients, invoices, business profile, logo upload, custom forms, PDF export, and admin static assets
+
+## Current Status
 
 INVEXA is a completed portfolio MVP.
 
 The core invoice workflow, GST calculations, custom business-profile workflow, PDF export, automated tests, and Windows desktop demo are complete. The executable is shared privately on request for interviewer evaluation.
 
-Author
+## Author
 
 Designed and developed by Ajmal Shan.
